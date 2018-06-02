@@ -6,7 +6,7 @@
   "author": "Matthew <matthewcnitschke@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/index.html --public-url /pathware"
+    "start": "parcel src/index.html --public-url /pathware/dist"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
