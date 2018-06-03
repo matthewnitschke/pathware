@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import PathViewer from './PathViewer.jsx'
+import ChapterViewer from './ChapterViewer.jsx'
 import BookSelector from './BookSelector.jsx'
 
 import '../css/site.css'
@@ -18,27 +18,40 @@ export default class Main extends Component {
         }
     }
 
-    handlePathChange = (pathName) => {
+    handleBookChange = (book) => {
         this.setState({
-            'selectedPath': pathName
+            selectedBook: book
+        })
+    }
+
+    handleChapterChange = (chapter) => {
+        this.setState({
+            selectedChapter: chapter
         })
     }
 
     render() {
         return (
-            <div className="main-content" style={{backgroundImage: `url('${backgroundImageUrl}')`}}>
+            <div className="main-content" style={{ backgroundImage: `url('${backgroundImageUrl}')` }}>
                 <header>
                     <div className="container">
                         Pathware
                     </div>
                 </header>
 
-                <div className="container df mt3">
-                    <BookSelector book={this.state.selectedBook} chapter={this.state.selectedChapter} onChange={this.handleChange} />
-                    <PathViewer selectedPath={this.state.selectedPath}/>
+                <div className="container df jcc mt3">
+                    <BookSelector 
+                        book={this.state.selectedBook} 
+                        chapter={this.state.selectedChapter} 
+                        onBookChange={this.handleBookChange} 
+                        onChapterChange={this.handleChapterChange}/>
+                    {
+                        this.state.selectedBook != '' && this.state.selectedChapter != '' &&
+                        <ChapterViewer chapterText={this.state.selectedChapter} bookName={this.state.selectedBook}/>
+                    }
                 </div>
 
-                
+
             </div>
         );
     }

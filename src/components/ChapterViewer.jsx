@@ -3,13 +3,12 @@ import React, { Component } from 'react';
 import PathViewerTabs from './PathViewerTabs.jsx'
 import Checkbox from './Checkbox.jsx'
 
-export default class PathViewer extends Component {
+export default class ChapterViewer extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
             selectedTab: 'Review',
-            pathText: '1 James, a servant of God and of the Lord Jesus Christ, To the twelve tribes scattered among the nations: Greetings.',
 
             guessText: '',
 
@@ -61,7 +60,7 @@ export default class PathViewer extends Component {
 
     guessTextMatchText = () => {
         let guessText = this.state.guessText
-        let text = this.state.pathText
+        let text = this.props.chapterText
 
         if (!this.state.punctuation) {
             text = text.replace(new RegExp(`[${this.state.punctuationSymbols}]`, "gm"), "")
@@ -89,7 +88,7 @@ export default class PathViewer extends Component {
                 <PathViewerTabs selectedTab={this.state.selectedTab} onTabChange={this.onTabChange} />
                 <div className="path-viewer-container">
                     <div className="p3">
-                        <h1 className="mb1">James 1</h1>
+                        <h1 className="mb1">{this.props.bookName}</h1>
                         <div className="mb1">
                             <Checkbox 
                                 label="Capitalization"
@@ -123,14 +122,14 @@ export default class PathViewer extends Component {
                         {
                             this.state.selectedTab == 'Acronym' &&
                             <div>
-                                <textarea value={this.getLetters(this.state.pathText)} disabled></textarea>
+                                <textarea value={this.getLetters(this.props.chapterText)} disabled></textarea>
                             </div>
                         }
 
                         {
                             this.state.selectedTab == 'Text' &&
                             <div>
-                                <textarea name="pathText" value={this.state.pathText} onChange={this.handleChange}></textarea>
+                                <textarea name="chapterText" value={this.props.chapterText} onChange={this.handleChange}></textarea>
                             </div>
                         }
                     </div>
