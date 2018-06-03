@@ -17,7 +17,7 @@ export default class PathViewer extends Component {
             punctuation: false,
             numbers: false,
 
-            punctuationSymbols: `.,!"';:()\\[\\]-`
+            punctuationSymbols: `.,?!"';:()\\[\\]-`
 
         }
     }
@@ -39,7 +39,7 @@ export default class PathViewer extends Component {
     }
 
     getLetters = (words) => {
-        let puncRegex = this.state.punctuation ? `|[.,!"';:()]` : ''
+        let puncRegex = this.state.punctuation ? `|[.,!"';:()?]` : ''
         let regex = `[\\d]+|(\\b(\\w)${puncRegex})`
 
         var letters = words.match(new RegExp(regex, "g"));

@@ -91,7 +91,6 @@ header {
 .path-selector-item {
     font-size: 2rem;
     font-weight: 100;
-    margin-bottom: 1rem;
     color: #FFF;
 }
 
@@ -99,6 +98,10 @@ header {
     font-weight: 500;
 }
 
+.chapter-item {
+    color: #FFF;
+    font-size: 1.2rem;
+}
 
 .checkbox-input {
     display: none; 

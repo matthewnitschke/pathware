@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({16:[function(require,module,exports) {
+})({17:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -189,7 +189,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],19:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -243,7 +243,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],18:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -261,7 +261,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],17:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -361,7 +361,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":17}],29:[function(require,module,exports) {
+},{"./emptyFunction":21}],30:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -375,7 +375,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],21:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -435,7 +435,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":19,"fbjs/lib/warning":20,"./lib/ReactPropTypesSecret":29}],12:[function(require,module,exports) {
+},{"fbjs/lib/invariant":18,"fbjs/lib/warning":20,"./lib/ReactPropTypesSecret":30}],11:[function(require,module,exports) {
 /** @license React v16.4.0
  * react.development.js
  *
@@ -1904,7 +1904,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":16,"fbjs/lib/invariant":19,"fbjs/lib/emptyObject":18,"fbjs/lib/warning":20,"fbjs/lib/emptyFunction":17,"prop-types/checkPropTypes":21}],5:[function(require,module,exports) {
+},{"object-assign":17,"fbjs/lib/invariant":18,"fbjs/lib/emptyObject":19,"fbjs/lib/warning":20,"fbjs/lib/emptyFunction":21,"prop-types/checkPropTypes":22}],4:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1912,7 +1912,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.development.js":12}],22:[function(require,module,exports) {
+},{"./cjs/react.development.js":11}],23:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1946,7 +1946,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],23:[function(require,module,exports) {
+},{}],24:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1983,7 +1983,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],24:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2049,7 +2049,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],33:[function(require,module,exports) {
+},{}],34:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2072,7 +2072,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],30:[function(require,module,exports) {
+},{}],33:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2095,7 +2095,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":33}],25:[function(require,module,exports) {
+},{"./isNode":34}],26:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2133,7 +2133,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":30}],31:[function(require,module,exports) {
+},{"./isTextNode":33}],31:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2164,7 +2164,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],26:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2231,7 +2231,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],27:[function(require,module,exports) {
+},{}],28:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2269,7 +2269,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":32}],11:[function(require,module,exports) {
+},{"./camelize":32}],12:[function(require,module,exports) {
 /** @license React v16.4.0
  * react-dom.development.js
  *
@@ -19551,7 +19551,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"fbjs/lib/invariant":19,"react":5,"fbjs/lib/warning":20,"fbjs/lib/ExecutionEnvironment":22,"object-assign":16,"fbjs/lib/emptyFunction":17,"prop-types/checkPropTypes":21,"fbjs/lib/getActiveElement":23,"fbjs/lib/shallowEqual":24,"fbjs/lib/containsNode":25,"fbjs/lib/emptyObject":18,"fbjs/lib/hyphenateStyleName":26,"fbjs/lib/camelizeStyleName":27}],4:[function(require,module,exports) {
+},{"fbjs/lib/invariant":18,"react":4,"fbjs/lib/warning":20,"fbjs/lib/ExecutionEnvironment":23,"object-assign":17,"fbjs/lib/emptyFunction":21,"prop-types/checkPropTypes":22,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":25,"fbjs/lib/containsNode":26,"fbjs/lib/emptyObject":19,"fbjs/lib/hyphenateStyleName":27,"fbjs/lib/camelizeStyleName":28}],5:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -19587,7 +19587,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":11}],13:[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":12}],14:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19653,7 +19653,7 @@ var PathViewerTabs = function (_Component) {
 }(_react.Component);
 
 exports.default = PathViewerTabs;
-},{"react":5}],14:[function(require,module,exports) {
+},{"react":4}],15:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19714,7 +19714,7 @@ var Checkbox = function (_Component) {
 }(_react.Component);
 
 exports.default = Checkbox;
-},{"react":5}],6:[function(require,module,exports) {
+},{"react":4}],6:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -19768,7 +19768,7 @@ var PathViewer = function (_Component) {
         };
 
         _this.getLetters = function (words) {
-            var puncRegex = _this.state.punctuation ? '|[.,!"\';:()]' : '';
+            var puncRegex = _this.state.punctuation ? '|[.,!"\';:()?]' : '';
             var regex = '[\\d]+|(\\b(\\w)' + puncRegex + ')';
 
             var letters = words.match(new RegExp(regex, "g"));
@@ -19822,7 +19822,7 @@ var PathViewer = function (_Component) {
             punctuation: false,
             numbers: false,
 
-            punctuationSymbols: '.,!"\';:()\\[\\]-'
+            punctuationSymbols: '.,?!"\';:()\\[\\]-'
 
         };
         return _this;
@@ -19894,7 +19894,14 @@ var PathViewer = function (_Component) {
 }(_react.Component);
 
 exports.default = PathViewer;
-},{"react":5,"./PathViewerTabs.jsx":13,"./Checkbox.jsx":14}],7:[function(require,module,exports) {
+},{"react":4,"./PathViewerTabs.jsx":14,"./Checkbox.jsx":15}],13:[function(require,module,exports) {
+module.exports = [{
+    "name": "James",
+    "chapters": [
+        "1 James, a servant of God and of the Lord Jesus Christ, To the twelve tribes scattered among the nations: Greetings. 2 Consider it pure joy, my brothers, whenever you face trials of many kinds, 3 because you know that the testing of your faith develops perseverance. 4 Perseverance must finish its work so that you may be mature and complete, not lacking anything. 5 If any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him. 6 But when he asks, he must believe and not doubt because he who doubts is like a wave of the sea, blown and tossed by the wind. 7 That man should not think he will receive anything from the Lord; 8 he is a double-minded man, unstable in all he does. 9 The brother in humble circumstances ought to take pride in his high position. 10 But the one who is rich should take pride in his low position, because he will pass away like a wild flower. 11 For the sun rises with scorching heat and withers the plant; its blossom falls and its beauty is destroyed. In the same way, the rich man will fade away even while he goes about his business. 12 Blessed is the man who perseveres under trial, because when he has stood the test, he will receive the crown of life that God has promised to those who love him. 13 When tempted, no one should say, \"God is tempting me.\" For God cannot be tempted by evil, nor does he tempt anyone; 14 but each one is tempted when, by his own evil desire, he is dragged away and enticed. 15 Then, after desire has conceived, it gives birth to sin; and sin, when it is fullgrown, gives birth to death. 16 Don't be deceived, my dear brothers. 17 Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows. 18 He chose to give us birth through the word of truth, that we might be a kind of firstfruits of all he created. 19 My dear brothers, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry,  20 for man's anger does not bring about the righteous life that God desires. 21 Therefore, get rid of all moral filth and the evil that is so prevalent and humbly accept the word planted in you, which can save you. 22 Do not merely listen to the word, and so deceive yourselves. Do what it says. 23 Anyone who listens to the word but does not do what it says is like a man who looks at his face in a mirror 24 and, after looking at himself, goes away and immediately forgets what he looks like. 25 But the man who looks intently into the perfect law that gives freedom, and continues to do this, not forgetting what he has heard, but doing it--he will be blessed in what he does. 26 If anyone considers himself religious and yet does not keep a tight rein on his tongue, he deceives himself and his religion is worthless. 27 Religion that God our Father accepts as pure and faultless is this: to look after orphans and widows in their distress and to keep oneself from being polluted by the world."
+    ]
+}];
+},{}],38:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -19915,6 +19922,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var paths = require('../pathes.json');
+
 var PathSelector = function (_Component) {
     _inherits(PathSelector, _Component);
 
@@ -19924,8 +19933,8 @@ var PathSelector = function (_Component) {
         var _this = _possibleConstructorReturn(this, (PathSelector.__proto__ || Object.getPrototypeOf(PathSelector)).call(this, props));
 
         _this.state = {
-            selectedPath: 'James 1',
-            paths: ['James 1', 'James 2']
+            selectedPath: 'James',
+            paths: paths
         };
         return _this;
     }
@@ -19936,11 +19945,15 @@ var PathSelector = function (_Component) {
             var _this2 = this;
 
             var pathsDom = this.state.paths.map(function (el) {
-                var classes = 'path-selector-item' + (el == _this2.state.selectedPath ? ' selected' : '');
+                var selected = el.name == _this2.props.selectedPath;
                 return _react2.default.createElement(
                     'div',
-                    { className: classes },
-                    el
+                    {
+                        onClick: function onClick() {
+                            _this2.props.onChange(el.name);
+                        },
+                        className: 'path-selector-item' + (selected ? ' selected' : '') },
+                    el.name
                 );
             });
 
@@ -19961,7 +19974,7 @@ var PathSelector = function (_Component) {
 }(_react.Component);
 
 exports.default = PathSelector;
-},{"react":5}],28:[function(require,module,exports) {
+},{"react":4,"../pathes.json":13}],29:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -19991,7 +20004,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],15:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -20022,19 +20035,19 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":28}],8:[function(require,module,exports) {
+},{"./bundle-url":29}],8:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":15}],9:[function(require,module,exports) {
+},{"_css_loader":16}],9:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":15}],10:[function(require,module,exports) {
+},{"_css_loader":16}],10:[function(require,module,exports) {
 module.exports="/pathware/BackgroundImage.dc404206.png";
 },{}],3:[function(require,module,exports) {
 'use strict';
@@ -20053,9 +20066,9 @@ var _PathViewer = require('./PathViewer.jsx');
 
 var _PathViewer2 = _interopRequireDefault(_PathViewer);
 
-var _PathSelector = require('./PathSelector.jsx');
+var _BookSelector = require('./BookSelector.jsx');
 
-var _PathSelector2 = _interopRequireDefault(_PathSelector);
+var _BookSelector2 = _interopRequireDefault(_BookSelector);
 
 require('../css/site.css');
 
@@ -20076,10 +20089,22 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Main = function (_Component) {
     _inherits(Main, _Component);
 
-    function Main() {
+    function Main(props) {
         _classCallCheck(this, Main);
 
-        return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+
+        _this.handlePathChange = function (pathName) {
+            _this.setState({
+                'selectedPath': pathName
+            });
+        };
+
+        _this.state = {
+            selectedBook: '',
+            selectedChapter: ''
+        };
+        return _this;
     }
 
     _createClass(Main, [{
@@ -20100,8 +20125,8 @@ var Main = function (_Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'container df mt3' },
-                    _react2.default.createElement(_PathViewer2.default, null),
-                    _react2.default.createElement(_PathSelector2.default, null)
+                    _react2.default.createElement(_BookSelector2.default, { book: this.state.selectedBook, chapter: this.state.selectedChapter, onChange: this.handleChange }),
+                    _react2.default.createElement(_PathViewer2.default, { selectedPath: this.state.selectedPath })
                 )
             );
         }
@@ -20111,7 +20136,7 @@ var Main = function (_Component) {
 }(_react.Component);
 
 exports.default = Main;
-},{"react":5,"./PathViewer.jsx":6,"./PathSelector.jsx":7,"../css/site.css":8,"../css/gravitons.css":9,"../images/BackgroundImage.png":10}],2:[function(require,module,exports) {
+},{"react":4,"./PathViewer.jsx":6,"./BookSelector.jsx":38,"../css/site.css":8,"../css/gravitons.css":9,"../images/BackgroundImage.png":10}],2:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -20127,7 +20152,7 @@ var _Main2 = _interopRequireDefault(_Main);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _reactDom.render)(_react2.default.createElement(_Main2.default, null), document.getElementById('root'));
-},{"react":5,"react-dom":4,"./components/Main.jsx":3}],37:[function(require,module,exports) {
+},{"react":4,"react-dom":5,"./components/Main.jsx":3}],35:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -20156,7 +20181,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59588' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63047' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -20297,5 +20322,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[37,2], null)
+},{}]},{},[35,2], null)
 //# sourceMappingURL=/pathware/entry.d0f44e16.map
