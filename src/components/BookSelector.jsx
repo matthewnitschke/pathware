@@ -8,6 +8,21 @@ export default class PathSelector extends Component {
     }
 
     render() {
+        let chapterDom = []
+        if (this.props.book != ''){
+            chapterDom = books[this.props.book].map((chapter, i) => {
+                let selected = chapter == this.props.chapter
+                return (
+                    <div
+                        onClick={() => {
+                            this.props.onChapterChange(chapter)}}
+                        className={`animated fadeInDown chapter-selector-item${selected ? ' selected' : ''}`}>
+                        Chapter {i+1}
+                    </div>
+                )
+            })
+        }
+
         let bookDom = Object.keys(books).map(book => {
             let selected = book == this.props.book
             return (
@@ -18,38 +33,24 @@ export default class PathSelector extends Component {
                     }} 
                     className={`book-selector-item${selected ? ' selected' : ''}`}>
                     {book}
+
+                    {
+                        selected > 0 &&
+                        <div className="mr2">
+                            {chapterDom}
+                        </div>
+                    }
                 </div>
             )
         })
 
-        let chapterDom = []
-        if (this.props.book != ''){
-            chapterDom = books[this.props.book].map((chapter, i) => {
-                let selected = chapter == this.props.chapter
-                return (
-                    <div
-                        onClick={() => {this.props.onChapterChange(chapter)}}
-                        className={`chapter-selector-item${selected ? ' selected' : ''}`}>
-                        Chapter {i+1}
-                    </div>
-                )
-            })
-        }
 
         return (
-            <div className="mt4 df">
+            <div className="mt4 df mr3 animated fadeInLeft">
                 <div className="mr2">
                     <div className="path-selector-header">Books</div>
                     {bookDom}
                 </div>
-
-                {
-                    chapterDom.length > 0 &&
-                    <div className="mr2">
-                        {chapterDom}
-                    </div>
-                }
-                
             </div>
         );
     }
