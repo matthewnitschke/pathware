@@ -7,39 +7,45 @@ export default class PathSelector extends Component {
         super(props)
     }
 
+    bookClicked = (newBook) => {
+        if (newBook == this.props.book) {
+            // toggle book if it is the one that is clicked
+            this.props.onBookChange('')
+        } else {
+            this.props.onBookChange(newBook)
+            this.props.onChapterChange(books[newBook][0])
+        }
+       
+        
+    }
+
     render() {
-        let chapterDom = []
-        if (this.props.book != ''){
-            chapterDom = books[this.props.book].map((chapter, i) => {
+
+        let bookDom = Object.keys(books).map(book => {
+            let selected = book == this.props.book
+
+            let chapterDom = books[book].map((chapter, i) => {
                 let selected = chapter == this.props.chapter
                 return (
                     <div
                         onClick={() => {
                             this.props.onChapterChange(chapter)}}
-                        className={`animated fadeInDown chapter-selector-item${selected ? ' selected' : ''}`}>
+                        className={`chapter-selector-item${selected ? ' selected' : ''}`}>
                         Chapter {i+1}
                     </div>
                 )
             })
-        }
 
-        let bookDom = Object.keys(books).map(book => {
-            let selected = book == this.props.book
             return (
-                <div 
-                    onClick={() => {
-                        this.props.onBookChange(book)
-                        this.props.onChapterChange('')
-                    }} 
+                <div
                     className={`book-selector-item${selected ? ' selected' : ''}`}>
-                    {book}
-
+                    <span onClick={() => this.bookClicked(book)}>{book}</span>
                     {
-                        selected > 0 &&
-                        <div className="mr2">
+                        selected &&
+                        <div className={`mr2`}>
                             {chapterDom}
                         </div>
-                    }
+                    } 
                 </div>
             )
         })
