@@ -52,7 +52,9 @@ export default class Main extends Component {
                     }
                 </div>
 
-
+                <footer className="footer">
+                    Made with <i class="fas fa-heart"></i> by <a href="https://github.com/matthewnitschke">Matthew</a> and <a href="https://www.linkedin.com/in/sarah-nitschke-4330a236">Sarah</a>
+                </footer>
             </div>
         );
     }

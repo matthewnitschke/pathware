@@ -152,3 +152,21 @@ header {
     cursor: pointer;
     letter-spacing: 3px;
 }
+
+.footer {
+    width:100%;
+    position: absolute;
+    bottom: 5px;
+    font-weight: 200;
+    color: #FFF;
+    text-align: center;
+    font-size:90%;
+}
+
+.footer a {
+    color: #FFF;
+}
+
+.footer .heart {
+    color: #ff5056;
+}
