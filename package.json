@@ -9,8 +9,11 @@
     "start": "parcel src/index.html --out-dir ./ --public-url /pathware"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "n-args": "^1.0.2",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "requestify": "^0.2.5"
   },
   "devDependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
