@@ -361,7 +361,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":23}],35:[function(require,module,exports) {
+},{"./emptyFunction":23}],32:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -435,7 +435,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":21,"fbjs/lib/warning":20,"./lib/ReactPropTypesSecret":35}],10:[function(require,module,exports) {
+},{"fbjs/lib/invariant":21,"fbjs/lib/warning":20,"./lib/ReactPropTypesSecret":32}],12:[function(require,module,exports) {
 /** @license React v16.4.0
  * react.development.js
  *
@@ -1904,7 +1904,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":19,"fbjs/lib/invariant":21,"fbjs/lib/emptyObject":22,"fbjs/lib/warning":20,"fbjs/lib/emptyFunction":23,"prop-types/checkPropTypes":24}],5:[function(require,module,exports) {
+},{"object-assign":19,"fbjs/lib/invariant":21,"fbjs/lib/emptyObject":22,"fbjs/lib/warning":20,"fbjs/lib/emptyFunction":23,"prop-types/checkPropTypes":24}],4:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1912,7 +1912,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.development.js":10}],25:[function(require,module,exports) {
+},{"./cjs/react.development.js":12}],28:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1983,7 +1983,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],27:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2049,7 +2049,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],39:[function(require,module,exports) {
+},{}],36:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2072,7 +2072,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],37:[function(require,module,exports) {
+},{}],33:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2095,7 +2095,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":39}],28:[function(require,module,exports) {
+},{"./isNode":36}],27:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2133,7 +2133,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":37}],38:[function(require,module,exports) {
+},{"./isTextNode":33}],35:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2201,7 +2201,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":38}],36:[function(require,module,exports) {
+},{"./hyphenate":35}],34:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2269,7 +2269,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":36}],11:[function(require,module,exports) {
+},{"./camelize":34}],13:[function(require,module,exports) {
 /** @license React v16.4.0
  * react-dom.development.js
  *
@@ -19551,7 +19551,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"fbjs/lib/invariant":21,"react":5,"fbjs/lib/warning":20,"fbjs/lib/ExecutionEnvironment":25,"object-assign":19,"fbjs/lib/emptyFunction":23,"prop-types/checkPropTypes":24,"fbjs/lib/getActiveElement":26,"fbjs/lib/shallowEqual":27,"fbjs/lib/containsNode":28,"fbjs/lib/emptyObject":22,"fbjs/lib/hyphenateStyleName":29,"fbjs/lib/camelizeStyleName":30}],6:[function(require,module,exports) {
+},{"fbjs/lib/invariant":21,"react":4,"fbjs/lib/warning":20,"fbjs/lib/ExecutionEnvironment":28,"object-assign":19,"fbjs/lib/emptyFunction":23,"prop-types/checkPropTypes":24,"fbjs/lib/getActiveElement":26,"fbjs/lib/shallowEqual":25,"fbjs/lib/containsNode":27,"fbjs/lib/emptyObject":22,"fbjs/lib/hyphenateStyleName":29,"fbjs/lib/camelizeStyleName":30}],5:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -19587,7 +19587,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":11}],31:[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":13}],15:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19653,7 +19653,7 @@ var PathViewerTabs = function (_Component) {
 }(_react.Component);
 
 exports.default = PathViewerTabs;
-},{"react":5}],32:[function(require,module,exports) {
+},{"react":4}],16:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19714,7 +19714,7 @@ var Checkbox = function (_Component) {
 }(_react.Component);
 
 exports.default = Checkbox;
-},{"react":5}],12:[function(require,module,exports) {
+},{"react":4}],6:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -19893,7 +19893,7 @@ var ChapterViewer = function (_Component) {
 }(_react.Component);
 
 exports.default = ChapterViewer;
-},{"react":5,"./PathViewerTabs.jsx":31,"./Checkbox.jsx":32}],33:[function(require,module,exports) {
+},{"react":4,"./PathViewerTabs.jsx":15,"./Checkbox.jsx":16}],14:[function(require,module,exports) {
 module.exports = {
     "James": [
         "1 James, a servant of God and of the Lord Jesus Christ, To the twelve tribes scattered among the nations: Greetings. 2 Consider it pure joy, my brothers, whenever you face trials of many kinds, 3 because you know that the testing of your faith develops perseverance. 4 Perseverance must finish its work so that you may be mature and complete, not lacking anything. 5 If any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him. 6 But when he asks, he must believe and not doubt because he who doubts is like a wave of the sea, blown and tossed by the wind. 7 That man should not think he will receive anything from the Lord; 8 he is a double-minded man, unstable in all he does. 9 The brother in humble circumstances ought to take pride in his high position. 10 But the one who is rich should take pride in his low position, because he will pass away like a wild flower. 11 For the sun rises with scorching heat and withers the plant; its blossom falls and its beauty is destroyed. In the same way, the rich man will fade away even while he goes about his business. 12 Blessed is the man who perseveres under trial, because when he has stood the test, he will receive the crown of life that God has promised to those who love him. 13 When tempted, no one should say, \"God is tempting me.\" For God cannot be tempted by evil, nor does he tempt anyone; 14 but each one is tempted when, by his own evil desire, he is dragged away and enticed. 15 Then, after desire has conceived, it gives birth to sin; and sin, when it is fullgrown, gives birth to death. 16 Don't be deceived, my dear brothers. 17 Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows. 18 He chose to give us birth through the word of truth, that we might be a kind of firstfruits of all he created. 19 My dear brothers, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry, 20 for man's anger does not bring about the righteous life that God desires. 21 Therefore, get rid of all moral filth and the evil that is so prevalent and humbly accept the word planted in you, which can save you. 22 Do not merely listen to the word, and so deceive yourselves. Do what it says. 23 Anyone who listens to the word but does not do what it says is like a man who looks at his face in a mirror 24 and, after looking at himself, goes away and immediately forgets what he looks like. 25 But the man who looks intently into the perfect law that gives freedom, and continues to do this, not forgetting what he has heard, but doing it--he will be blessed in what he does. 26 If anyone considers himself religious and yet does not keep a tight rein on his tongue, he deceives himself and his religion is worthless. 27 Religion that God our Father accepts as pure and faultless is this: to look after orphans and widows in their distress and to keep oneself from being polluted by the world.",
@@ -19914,9 +19914,18 @@ module.exports = {
         "1 How great is the love the Father has lavished on us, that we should be called children of God! And that is what we are! The reason the world does not know us is that it did not know him. 2 Dear friends, now we are children of God, and what we will be has not yet been made known. But we know that when he appears, we shall be like him, for we shall see him as he is. 3 Everyone who has this hope in him purifies himself, just as he is pure. 4 Everyone who sins breaks the law; in fact, sin is lawlessness. 5 But you know that he appeared so that he might take away our sins. And in him is no sin. 6 No one who lives in him keeps on sinning. No one who continues to sin has either seen him or known him. 7 Dear children, do not let anyone lead you astray. He who does what is right is righteous, just as he is righteous. 8 He who does what is sinful is of the devil, because the devil has been sinning from the beginning. The reason the Son of God appeared was to destroy the devil's work. 9 No one who is born of God will continue to sin, because God's seed remains in him; he cannot go on sinning, because he has been born of God. 10 This is how we know who the children of God are and who the children of the devil are: Anyone who does not do what is right is not a child of God; nor is anyone who does not love his brother. 11 This is the message you heard from the beginning: We should love one another. 12 Do not be like Cain, who belonged to the evil one and murdered his brother. And why did he murder him? Because his own actions were evil and his brother's were righteous. 13 Do not be surprised, my brothers, if the world hates you. 14 We know that we have passed from death to life, because we love our brothers. Anyone who does not love remains in death. 15 Anyone who hates his brother is a murderer, and you know that no murderer has eternal life in him. 16 This is how we know what love is: Jesus Christ laid down his life for us. And we ought to lay down our lives for our brothers. 17 If anyone has material possessions and sees his brother in need but has no pity on him, how can the love of God be in him? 18 Dear children, let us not love with words or tongue but with actions and in truth. 19 This then is how we know that we belong to the truth, and how we set our hearts at rest in his presence 20 whenever our hearts condemn us. For God is greater than our hearts, and he knows everything. 21 Dear friends, if our hearts do not condemn us, we have confidence before God 22 and receive from him anything we ask, because we obey his commands and do what pleases him. 23 And this is his command: to believe in the name of his Son, Jesus Christ, and to love one another as he commanded us. 24 Those who obey his commands live in him, and he in them. And this is how we know that he lives in us: We know it by the Spirit he gave us.",
         "1 Dear friends, do not believe every spirit, but test the spirits to see whether they are from God, because many false prophets have gone out into the world. 2 This is how you can recognize the Spirit of God: Every spirit that acknowledges that Jesus Christ has come in the flesh is from God, 3 but every spirit that does not acknowledge Jesus is not from God. This is the spirit of the antichrist, which you have heard is coming and even now is already in the world. 4 You, dear children, are from God and have overcome them, because the one who is in you is greater than the one who is in the world. 5 They are from the world and therefore speak from the viewpoint of the world, and the world listens to them. 6 We are from God, and whoever knows God listens to us; but whoever is not from God does not listen to us. This is how we recognize the Spirit of truth and the spirit of falsehood. 7 Dear friends, let us love one another, for love comes from God. Everyone who loves has been born of God and knows God. 8 Whoever does not love does not know God, because God is love. 9 This is how God showed his love among us: He sent his one and only Son into the world that we might live through him. 10 This is love: not that we loved God, but that he loved us and sent his Son as an atoning sacrifice for our sins. 11 Dear friends, since God so loved us, we also ought to love one another. 12 No one has ever seen God; but if we love one another, God lives in us and his love is made complete in us. 13 We know that we live in him and he in us, because he has given us of his Spirit. 14 And we have seen and testify that the Father has sent his Son to be the Savior of the world. 15 If anyone acknowledges that Jesus is the Son of God, God lives in him and he in God. 16 And so we know and rely on the love God has for us. God is love. Whoever lives in love lives in God, and God in him. 17 In this way, love is made complete among us so that we will have confidence on the day of judgment, because in this world we are like him. 18 There is no fear in love. But perfect love drives out fear, because fear has to do with punishment. The one who fears is not made perfect in love. 19 We love because he first loved us. 20 If anyone says, \"I love God,\" yet hates his brother, he is a liar. For anyone who does not love his brother, whom he has seen, cannot love God, whom he has not seen. 21 And he has given us this command: Whoever loves God must also love his brother.",
         "1 Everyone who believes that Jesus is the Christ is born of God, and everyone who loves the father loves his child as well. 2 This is how we know that we love the children of God: by loving God and carrying out his commands. 3 This is love for God: to obey his commands. And his commands are not burdensome, 4 for everyone born of God overcomes the world. This is the victory that has overcome the world, even our faith. 5 Who is it that overcomes the world? Only he who believes that Jesus is the Son of God. 6 This is the one who came by water and blood--Jesus Christ. He did not come by water only, but by water and blood. And it is the Spirit who testifies, because the Spirit is the truth. 7 For there are three that testify: 8 the Spirit, the water and the blood; and the three are in agreement. 9 We accept man's testimony, but God's testimony is greater because it is the testimony of God, which he has given about his Son. 10 Anyone who believes in the Son of God has this testimony in his heart. Anyone who does not believe God has made him out to be a liar, because he has not believed the testimony God has given about his Son. 11 And this is the testimony: God has given us eternal life, and this life is in his Son. 12 He who has the Son has life; he who does not have the Son of God does not have life. 13 I write these things to you who believe in the name of the Son of God so that you may know that you have eternal life. 14 This is the confidence we have in approaching God: that if we ask anything according to his will, he hears us. 15 And if we know that he hears us-- whatever we ask--we know that we have what we asked of him. 16 If anyone sees his brother commit a sin that does not lead to death, he should pray and God will give him life. I refer to those whose sin does not lead to death. There is a sin that leads to death. I am not saying that he should pray about that. 17 All wrongdoing is sin, and there is sin that does not lead to death. 18 We know that anyone born of God does not continue to sin; the one who was born of God keeps him safe, and the evil one cannot harm him. 19 We know that we are children of God, and that the whole world is under the control of the evil one. 20 We know also that the Son of God has come and has given us understanding, so that we may know him who is true. And we are in him who is true--even in his Son Jesus Christ. He is the true God and eternal life. 21 Dear children, keep yourselves from idols."
+    ],
+    "2 John": [
+        "1 The elder, 2 To the chosen lady and her children, whom I love in the truth--and not I only, but also all who know the truth-- because of the truth, which lives in us and will be with us forever: 3 Grace, mercy and peace from God the Father and from Jesus Christ, the Father's Son, will be with us in truth and love. 4 It has given me great joy to find some of your children walking in the truth, just as the Father commanded us. 5 And now, dear lady, I am not writing you a new command but one we have had from the beginning. I ask that we love one another. 6 And this is love: that we walk in obedience to his commands. As you have heard from the beginning, his command is that you walk in love. 7 Many deceivers, who do not acknowledge Jesus Christ as coming in the flesh, have gone out into the world. Any such person is the deceiver and the antichrist. 8 Watch out that you do not lose what you have worked for, but that you may be rewarded fully. 9 Anyone who runs ahead and does not continue in the teaching of Christ does not have God; whoever continues in the teaching has both the Father and the Son. 10 If anyone comes to you and does not bring this teaching, do not take him into your house or welcome him. 11 Anyone who welcomes him shares in his wicked work. 12 I have much to write to you, but I do not want to use paper and ink. Instead, I hope to visit you and talk with you face to face, so that our joy may be complete. 13 The children of your chosen sister send their greetings."
+    ],
+    "3 John": [
+        "1 The elder, To my dear friend Gaius, whom I love in the truth. 2 Dear friend, I pray that you may enjoy good health and that all may go well with you, even as your soul is getting along well. 3 It gave me great joy to have some brothers come and tell about your faithfulness to the truth and how you continue to walk in the truth. 4 I have no greater joy than to hear that my children are walking in the truth. 5 Dear friend, you are faithful in what you are doing for the brothers, even though they are strangers to you. 6 They have told the church about your love. You will do well to send them on their way in a manner worthy of God. 7 It was for the sake of the Name that they went out, receiving no help from the pagans. 8 We ought therefore to show hospitality to such men so that we may work together for the truth. 9 I wrote to the church, but Diotrephes, who loves to be first, will have nothing to do with us. 10 So if I come, I will call attention to what he is doing, gossiping maliciously about us. Not satisfied with that, he refuses to welcome the brothers. He also stops those who want to do so and puts them out of the church. 11 Dear friend, do not imitate what is evil but what is good. Anyone who does what is good is from God. Anyone who does what is evil has not seen God. 12 Demetrius is well spoken of by everyone--and even by the truth itself. We also speak well of him, and you know that our testimony is true. 13 I have much to write you, but I do not want to do so with pen and ink. 14 I hope to see you soon, and we will talk face to face. Peace to you. The friends here send their greetings. Greet the friends there by name."
+    ],
+    "Jude": [
+        "1 Jude, a servant of Jesus Christ and a brother of James, To those who have been called, who are loved by God the Father and kept by Jesus Christ: 2 Mercy, peace and love be yours in abundance. 3 Dear friends, although I was very eager to write to you about the salvation we share, I felt I had to write and urge you to contend for the faith that was once for all entrusted to the saints. 4 For certain men whose condemnation was written about long ago have secretly slipped in among you. They are godless men, who change the grace of our God into a license for immorality and deny Jesus Christ our only Sovereign and Lord. 5 Though you already know all this, I want to remind you that the Lord delivered his people out of Egypt, but later destroyed those who did not believe. 6 And the angels who did not keep their positions of authority but abandoned their own home--these he has kept in darkness, bound with everlasting chains for judgment on the great Day. 7 In a similar way, Sodom and Gomorrah and the surrounding towns gave themselves up to sexual immorality and perversion. They serve as an example of those who suffer the punishment of eternal fire. 8 In the very same way, these dreamers pollute their own bodies, reject authority and slander celestial beings. 9 But even the archangel Michael, when he was disputing with the devil about the body of Moses, did not dare to bring a slanderous accusation against him, but said, \"The Lord rebuke you!\" 10 Yet these men speak abusively against whatever they do not understand; and what things they do understand by instinct, like unreasoning animals--these are the very things that destroy them. 11 Woe to them! They have taken the way of Cain; they have rushed for profit into Balaam's error; they have been destroyed in Korah's rebellion. 12 These men are blemishes at your love feasts, eating with you without the slightest qualm--shepherds who feed only themselves. They are clouds without rain, blown along by the wind; autumn trees, without fruit and uprooted--twice dead. 13 They are wild waves of the sea, foaming up their shame; wandering stars, for whom blackest darkness has been reserved forever. 14 Enoch, the seventh from Adam, prophesied about these men: \"See, the Lord is coming with thousands upon thousands of his holy ones 15 to judge everyone, and to convict all the ungodly of all the ungodly acts they have done in the ungodly way, and of all the harsh words ungodly sinners have spoken against him.\" 16 These men are grumblers and faultfinders; they follow their own evil desires; they boast about themselves and flatter others for their own advantage. 17 But, dear friends, remember what the apostles of our Lord Jesus Christ foretold. 18 They said to you, \"In the last times there will be scoffers who will follow their own ungodly desires.\" 19 These are the men who divide you, who follow mere natural instincts and do not have the Spirit. 20 But you, dear friends, build yourselves up in your most holy faith and pray in the Holy Spirit. 21 Keep yourselves in God's love as you wait for the mercy of our Lord Jesus Christ to bring you to eternal life. 22 Be merciful to those who doubt; 23 snatch others from the fire and save them; to others show mercy, mixed with fear--hating even the clothing stained by corrupted flesh. 24 To him who is able to keep you from falling and to present you before his glorious presence without fault and with great joy-- 25 to the only God our Savior be glory, majesty, power and authority, through Jesus Christ our Lord, before all ages, now and forevermore! Amen."
     ]
 };
-},{}],13:[function(require,module,exports) {
+},{}],7:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20022,7 +20031,7 @@ var PathSelector = function (_Component) {
 }(_react.Component);
 
 exports.default = PathSelector;
-},{"react":5,"../books.json":33}],34:[function(require,module,exports) {
+},{"react":4,"../books.json":14}],31:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -20083,27 +20092,27 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":34}],17:[function(require,module,exports) {
+},{"./bundle-url":31}],8:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":18}],15:[function(require,module,exports) {
+},{"_css_loader":18}],9:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":18}],14:[function(require,module,exports) {
+},{"_css_loader":18}],10:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":18}],16:[function(require,module,exports) {
+},{"_css_loader":18}],11:[function(require,module,exports) {
 module.exports="/pathware/BackgroundImage.dc404206.png";
-},{}],4:[function(require,module,exports) {
+},{}],3:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20220,7 +20229,7 @@ var Main = function (_Component) {
 }(_react.Component);
 
 exports.default = Main;
-},{"react":5,"./ChapterViewer.jsx":12,"./BookSelector.jsx":13,"../css/site.css":17,"../css/gravitons.css":15,"../css/animate.css":14,"../images/BackgroundImage.png":16}],2:[function(require,module,exports) {
+},{"react":4,"./ChapterViewer.jsx":6,"./BookSelector.jsx":7,"../css/site.css":8,"../css/gravitons.css":9,"../css/animate.css":10,"../images/BackgroundImage.png":11}],2:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -20236,7 +20245,7 @@ var _Main2 = _interopRequireDefault(_Main);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _reactDom.render)(_react2.default.createElement(_Main2.default, null), document.getElementById('root'));
-},{"react":5,"react-dom":6,"./components/Main.jsx":4}],40:[function(require,module,exports) {
+},{"react":4,"react-dom":5,"./components/Main.jsx":3}],37:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -20265,7 +20274,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '64974' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54142' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -20406,5 +20415,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[40,2], null)
+},{}]},{},[37,2], null)
 //# sourceMappingURL=/pathware/entry.d0f44e16.map
