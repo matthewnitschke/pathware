@@ -20,12 +20,14 @@ export default class Main extends Component {
     }
 
     handleBookChange = (book) => {
+        debugger
         this.setState({
             selectedBook: book
         })
     }
 
     handleChapterChange = (chapter) => {
+        debugger
         this.setState({
             selectedChapter: chapter
         })
@@ -47,7 +49,7 @@ export default class Main extends Component {
                         onBookChange={this.handleBookChange} 
                         onChapterChange={this.handleChapterChange}/>
                     {
-                        this.state.selectedBook != '' && this.state.selectedChapter != '' &&
+                        this.state.selectedBook && this.state.selectedChapter &&
                         <ChapterViewer chapterText={this.state.selectedChapter} bookName={this.state.selectedBook}/>
                     }
                 </div>
