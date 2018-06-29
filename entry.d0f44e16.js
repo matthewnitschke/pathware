@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({18:[function(require,module,exports) {
+})({19:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -189,7 +189,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],21:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -243,7 +243,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],19:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -261,7 +261,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],20:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -298,7 +298,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],22:[function(require,module,exports) {
+},{}],24:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -361,7 +361,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":20}],31:[function(require,module,exports) {
+},{"./emptyFunction":21}],32:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -435,7 +435,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":21,"fbjs/lib/warning":22,"./lib/ReactPropTypesSecret":31}],6:[function(require,module,exports) {
+},{"fbjs/lib/invariant":22,"fbjs/lib/warning":24,"./lib/ReactPropTypesSecret":32}],12:[function(require,module,exports) {
 /** @license React v16.4.0
  * react.development.js
  *
@@ -1904,7 +1904,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":18,"fbjs/lib/invariant":21,"fbjs/lib/emptyObject":19,"fbjs/lib/warning":22,"fbjs/lib/emptyFunction":20,"prop-types/checkPropTypes":23}],4:[function(require,module,exports) {
+},{"object-assign":19,"fbjs/lib/invariant":22,"fbjs/lib/emptyObject":20,"fbjs/lib/warning":24,"fbjs/lib/emptyFunction":21,"prop-types/checkPropTypes":23}],5:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1912,7 +1912,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.development.js":6}],24:[function(require,module,exports) {
+},{"./cjs/react.development.js":12}],25:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1946,7 +1946,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],25:[function(require,module,exports) {
+},{}],26:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1983,7 +1983,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],26:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2049,7 +2049,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],35:[function(require,module,exports) {
+},{}],36:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2072,7 +2072,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],32:[function(require,module,exports) {
+},{}],33:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2095,7 +2095,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":35}],27:[function(require,module,exports) {
+},{"./isNode":36}],28:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2133,7 +2133,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":32}],34:[function(require,module,exports) {
+},{"./isTextNode":33}],35:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2164,7 +2164,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],28:[function(require,module,exports) {
+},{}],29:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2201,7 +2201,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":34}],33:[function(require,module,exports) {
+},{"./hyphenate":35}],34:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2231,7 +2231,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],29:[function(require,module,exports) {
+},{}],30:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2269,7 +2269,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":33}],13:[function(require,module,exports) {
+},{"./camelize":34}],13:[function(require,module,exports) {
 /** @license React v16.4.0
  * react-dom.development.js
  *
@@ -19551,7 +19551,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"fbjs/lib/invariant":21,"react":4,"fbjs/lib/warning":22,"fbjs/lib/ExecutionEnvironment":24,"object-assign":18,"fbjs/lib/emptyFunction":20,"prop-types/checkPropTypes":23,"fbjs/lib/getActiveElement":25,"fbjs/lib/shallowEqual":26,"fbjs/lib/containsNode":27,"fbjs/lib/emptyObject":19,"fbjs/lib/hyphenateStyleName":28,"fbjs/lib/camelizeStyleName":29}],5:[function(require,module,exports) {
+},{"fbjs/lib/invariant":22,"react":5,"fbjs/lib/warning":24,"fbjs/lib/ExecutionEnvironment":25,"object-assign":19,"fbjs/lib/emptyFunction":21,"prop-types/checkPropTypes":23,"fbjs/lib/getActiveElement":26,"fbjs/lib/shallowEqual":27,"fbjs/lib/containsNode":28,"fbjs/lib/emptyObject":20,"fbjs/lib/hyphenateStyleName":29,"fbjs/lib/camelizeStyleName":30}],4:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -19653,7 +19653,7 @@ var PathViewerTabs = function (_Component) {
 }(_react.Component);
 
 exports.default = PathViewerTabs;
-},{"react":4}],16:[function(require,module,exports) {
+},{"react":5}],16:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19714,7 +19714,7 @@ var Checkbox = function (_Component) {
 }(_react.Component);
 
 exports.default = Checkbox;
-},{"react":4}],7:[function(require,module,exports) {
+},{"react":5}],6:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -19893,8 +19893,13 @@ var ChapterViewer = function (_Component) {
 }(_react.Component);
 
 exports.default = ChapterViewer;
-},{"react":4,"./PathViewerTabs.jsx":15,"./Checkbox.jsx":16}],36:[function(require,module,exports) {
+},{"react":5,"./PathViewerTabs.jsx":15,"./Checkbox.jsx":16}],14:[function(require,module,exports) {
 module.exports = {
+    "Matthew": {
+        "Chapter 5": "1 Now when he saw the crowds, he went up on a mountainside and sat down. His disciples came to him, 2 and he began to teach them saying: 3 \"Blessed are the poor in spirit, for theirs is the kingdom of heaven. 4 Blessed are those who mourn, for they will be comforted.  5 Blessed are the meek, for they will inherit the earth. 6 Blessed are those who hunger and thirst for righteousness, for they will be filled. 7 Blessed are the merciful, for they will be shown mercy. 8 Blessed are the pure in heart, for they will see God. 9 Blessed are the peacemakers, for they will be called sons of God. 10 Blessed are those who are persecuted because of righteousness, for theirs is the kingdom of heaven. 11 \"Blessed are you when people insult you, persecute you and falsely say all kinds of evil against you because of me. 12 Rejoice and be glad, because great is your reward in heaven, for in the same way they persecuted the prophets who were before you. 13 \"You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled by men. 14 \"You are the light of the world. A city on a hill cannot be hidden. 15 Neither do people light a lamp and put it under a bowl. Instead they put it on its stand, and it gives light to everyone in the house. 16 In the same way, let your light shine before men, that they may see your good deeds and praise your Father in heaven. 17 \"Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them. 18 I tell you the truth, until heaven and earth disappear, not the smallest letter, not the least stroke of a pen, will by any means disappear from the Law until everything is accomplished. 19 Anyone who breaks one of the least of these commandments and teaches others to do the same will be called least in the kingdom of heaven, but whoever practices and teaches these commands will be called great in the kingdom of heaven. 20 For I tell you that unless your righteousness surpasses that of the Pharisees and the teachers of the law, you will certainly not enter the kingdom of heaven. 21 \"You have heard that it was said to the people long ago, 'Do not murder, and anyone who murders will be subject to judgment.' 22 But I tell you that anyone who is angry with his brother will be subject to judgment. Again, anyone who says to his brother, 'Raca, ' is answerable to the Sanhedrin. But anyone who says, 'You fool!' will be in danger of the fire of hell.  23 \"Therefore, if you are offering your gift at the altar and there remember that your brother has something against you, 24 leave your gift there in front of the altar. First go and be reconciled to your brother; then come and offer your gift. 25 \"Settle matters quickly with your adversary who is taking you to court. Do it while you are still with him on the way, or he may hand you over to the judge, and the judge may hand you over to the officer, and you may be thrown into prison. 26 I tell you the truth, you will not get out until you have paid the last penny. 27 \"You have heard that it was said, 'Do not commit adultery.' 28 But I tell you that anyone who looks at a woman lustfully has already committed adultery with her in his heart. 29 If your right eye causes you to sin, gouge it out and throw it away. It is better for you to lose one part of your body than for your whole body to be thrown into hell. 30 And if your right hand causes you to sin, cut it off and throw it away. It is better for you to lose one part of your body than for your whole body to go into hell. 31 \"It has been said, 'Anyone who divorces his wife must give her a certificate of divorce.' 32 But I tell you that anyone who divorces his wife, except for marital unfaithfulness, causes her to become an adulteress, and anyone who marries the divorced woman commits adultery. 33 \"Again, you have heard that it was said to the people long ago, 'Do not break your oath, but keep the oaths you have made to the Lord.' 34 But I tell you, Do not swear at all: either by heaven, for it is God's throne; 35 or by the earth, for it is his footstool; or by Jerusalem, for it is the city of the Great King. 36 And do not swear by your head, for you cannot make even one hair white or black. 37 Simply let your 'Yes' be 'Yes,' and your 'No,' 'No'; anything beyond this comes from the evil one. 38 \"You have heard that it was said, 'Eye for eye, and tooth for tooth.' 39 But I tell you, Do not resist an evil person. If someone strikes you on the right cheek, turn to him the other also. 40 And if someone wants to sue you and take your tunic, let him have your cloak as well. 41 If someone forces you to go one mile, go with him two miles. 42 Give to the one who asks you, and do not turn away from the one who wants to borrow from you.  43 \"You have heard that it was said, 'Love your neighbor and hate your enemy.' 44 But I tell you: Love your enemies and pray for those who persecute you, 45 that you may be sons of your Father in heaven. He causes his sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous. 46 If you love those who love you, what reward will you get? Are not even the tax collectors doing that? 47 And if you greet only your brothers, what are you doing more than others? Do not even pagans do that? 48 Be perfect, therefore, as your heavenly Father is perfect.",
+        "Chapter 6": "1 \"Be careful not to do your 'acts of righteousness' before men, to be seen by them. If you do, you will have no reward from your Father in heaven. 2 \"So when you give to the needy, do not announce it with trumpets, as the hypocrites do in the synagogues and on the streets, to be honored by men. I tell you the truth, they have received their reward in full. 3 But when you give to the needy, do not let your left hand know what your right hand is doing, 4 so that your giving may be in secret. Then your Father, who sees what is done in secret, will reward you. 5 \"And when you pray, do not be like the hypocrites, for they love to pray standing in the synagogues and on the street corners to be seen by men. I tell you the truth, they have received their reward in full. 6 But when you pray, go into your room, close the door and pray to your Father, who is unseen. Then your Father, who sees what is done in secret, will reward you. 7 And when you pray, do not keep on babbling like pagans, for they think they will be heard because of their many words. 8 Do not be like them, for your Father knows what you need before you ask him. 9 \"This, then, is how you should pray: \" 'Our Father in heaven, hallowed be your name, 10 your kingdom come, your will be done on earth as it is in heaven. 11 Give us today our daily bread. 12 Forgive us our debts, as we also have forgiven our debtors. 13 And lead us not into temptation, but deliver us from the evil one. ' 14 For if you forgive men when they sin against you, your heavenly Father will also forgive you. 15 But if you do not forgive men their sins, your Father will not forgive your sins. 16 \"When you fast, do not look somber as the hypocrites do, for they disfigure their faces to show men they are fasting. I tell you the truth, they have received their reward in full. 17 But when you fast, put oil on your head and wash your face, 18 so that it will not be obvious to men that you are fasting, but only to your Father, who is unseen; and your Father, who sees what is done in secret, will reward you. 19 \"Do not store up for yourselves treasures on earth, where moth and rust destroy, and where thieves break in and steal. 20 But store up for yourselves treasures in heaven, where moth and rust do not destroy, and where thieves do not break in and steal. 21 For where your treasure is, there your heart will be also. 22 \"The eye is the lamp of the body. If your eyes are good, your whole body will be full of light. 23 But if your eyes are bad, your whole body will be full of darkness. If then the light within you is darkness, how great is that darkness! 24 \"No one can serve two masters. Either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve both God and Money. 25 \"Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more important than food, and the body more important than clothes? 26 Look at the birds of the air; they do not sow or reap or store away in barns, and yet your heavenly Father feeds them. Are you not much more valuable than they? 27 Who of you by worrying can add a single hour to his life ? 28 \"And why do you worry about clothes? See how the lilies of the field grow. They do not labor or spin. 29 Yet I tell you that not even Solomon in all his splendor was dressed like one of these. 30 If that is how God clothes the grass of the field, which is here today and tomorrow is thrown into the fire, will he not much more clothe you, O you of little faith? 31 So do not worry, saying, 'What shall we eat?' or 'What shall we drink?' or 'What shall we wear?' 32 For the pagans run after all these things, and your heavenly Father knows that you need them. 33 But seek first his kingdom and his righteousness, and all these things will be given to you as well. 34 Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.",
+        "Chapter 7": "1 \"Do not judge, or you too will be judged. For in the same way you judge others, you will be judged, and with the measure you use, it will be measured to you. \"Why do you look at the speck of sawdust in your brother's eye and pay no attention to the plank in your own eye? How can you say to your brother, 'Let me take the speck out of your eye,' when all the time there is a plank in your own eye? You hypocrite, first take the plank out of your own eye, and then you will see clearly to remove the speck from your brother's eye. \"Do not give dogs what is sacred; do not throw your pearls to pigs. If you do, they may trample them under their feet, and then turn and tear you to pieces. \"Ask and it will be given to you; seek and you will find; knock and the door will be opened to you. For everyone who asks receives; he who seeks finds; and to him who knocks, the door will be opened. \"Which of you, if his son asks for bread, will give him a stone? Or if he asks for a fish, will give him a snake? If you, then, though you are evil, know how to give good gifts to your children, how much more will your Father in heaven give good gifts to those who ask him! So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets. \"Enter through the narrow gate. For wide is the gate and broad is the road that leads to destruction, and many enter through it. But small is the gate and narrow the road that leads to life, and only a few find it. \"Watch out for false prophets. They come to you in sheep's clothing, but inwardly they are ferocious wolves. By their fruit you will recognize them. Do people pick grapes from thornbushes, or figs from thistles? Likewise every good tree bears good fruit, but a bad tree bears bad fruit. A good tree cannot bear bad fruit, and a bad tree cannot bear good fruit. Every tree that does not bear good fruit is cut down and thrown into the fire. Thus, by their fruit you will recognize them. \"Not everyone who says to me, 'Lord, Lord,' will enter the kingdom of heaven, but only he who does the will of my Father who is in heaven. Many will say to me on that day, 'Lord, Lord, did we not prophesy in your name, and in your name drive out demons and perform many miracles?' Then I will tell them plainly, 'I never knew you. Away from me, you evildoers!' \"Therefore everyone who hears these words of mine and puts them into practice is like a wise man who built his house on the rock. The rain came down, the streams rose, and the winds blew and beat against that house; yet it did not fall, because it had its foundation on the rock. But everyone who hears these words of mine and does not put them into practice is like a foolish man who built his house on sand. The rain came down, the streams rose, and the winds blew and beat against that house, and it fell with a great crash.\" When Jesus had finished saying these things, the crowds were amazed at his teaching, because he taught as one who had authority, and not as their teachers of the law."
+    },
     "James": {
         "Chapter 1": "1 James, a servant of God and of the Lord Jesus Christ, To the twelve tribes scattered among the nations: Greetings. 2 Consider it pure joy, my brothers, whenever you face trials of many kinds, 3 because you know that the testing of your faith develops perseverance. 4 Perseverance must finish its work so that you may be mature and complete, not lacking anything. 5 If any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him. 6 But when he asks, he must believe and not doubt because he who doubts is like a wave of the sea, blown and tossed by the wind. 7 That man should not think he will receive anything from the Lord; 8 he is a double-minded man, unstable in all he does. 9 The brother in humble circumstances ought to take pride in his high position. 10 But the one who is rich should take pride in his low position, because he will pass away like a wild flower. 11 For the sun rises with scorching heat and withers the plant; its blossom falls and its beauty is destroyed. In the same way, the rich man will fade away even while he goes about his business. 12 Blessed is the man who perseveres under trial, because when he has stood the test, he will receive the crown of life that God has promised to those who love him. 13 When tempted, no one should say, \"God is tempting me.\" For God cannot be tempted by evil, nor does he tempt anyone; 14 but each one is tempted when, by his own evil desire, he is dragged away and enticed. 15 Then, after desire has conceived, it gives birth to sin; and sin, when it is fullgrown, gives birth to death. 16 Don't be deceived, my dear brothers. 17 Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows. 18 He chose to give us birth through the word of truth, that we might be a kind of firstfruits of all he created. 19 My dear brothers, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry, 20 for man's anger does not bring about the righteous life that God desires. 21 Therefore, get rid of all moral filth and the evil that is so prevalent and humbly accept the word planted in you, which can save you. 22 Do not merely listen to the word, and so deceive yourselves. Do what it says. 23 Anyone who listens to the word but does not do what it says is like a man who looks at his face in a mirror 24 and, after looking at himself, goes away and immediately forgets what he looks like. 25 But the man who looks intently into the perfect law that gives freedom, and continues to do this, not forgetting what he has heard, but doing it--he will be blessed in what he does. 26 If anyone considers himself religious and yet does not keep a tight rein on his tongue, he deceives himself and his religion is worthless. 27 Religion that God our Father accepts as pure and faultless is this: to look after orphans and widows in their distress and to keep oneself from being polluted by the world.",
         "Chapter 2": "1 My brothers, as believers in our glorious Lord Jesus Christ, don't show favoritism. 2 Suppose a man comes into your meeting wearing a gold ring and fine clothes, and a poor man in shabby clothes also comes in. 3 If you show special attention to the man wearing fine clothes and say, \"Here's a good seat for you,\" but say to the poor man, \"You stand there\" or \"Sit on the floor by my feet,\" 4 have you not discriminated among yourselves and become judges with evil thoughts? 5 Listen, my dear brothers: Has not God chosen those who are poor in the eyes of the world to be rich in faith and to inherit the kingdom he promised those who love him? 6 But you have insulted the poor. Is it not the rich who are exploiting you? Are they not the ones who are dragging you into court? 7 Are they not the ones who are slandering the noble name of him to whom you belong? 8 If you really keep the royal law found in Scripture, \"Love your neighbor as yourself,\" you are doing right. 9 But if you show favoritism, you sin and are convicted by the law as lawbreakers. 10 For whoever keeps the whole law and yet stumbles at just one point is guilty of breaking all of it. 11 For he who said, \"Do not commit adultery,\" also said, \"Do not murder.\" If you do not commit adultery but do commit murder, you have become a lawbreaker. 12 Speak and act as those who are going to be judged by the law that gives freedom, 13 because judgment without mercy will be shown to anyone who has not been merciful. Mercy triumphs over judgment! 14 What good is it, my brothers, if a man claims to have faith but has no deeds? Can such faith save him? 15 Suppose a brother or sister is without clothes and daily food. 16 If one of you says to him, \"Go, I wish you well; keep warm and well fed,\" but does nothing about his physical needs, what good is it? 17 In the same way, faith by itself, if it is not accompanied by action, is dead. 18 But someone will say, \"You have faith; I have deeds.\" 19 Show me your faith without deeds, and I will show you my faith by what I do. You believe that there is one God. Good! Even the demons believe that-- and shudder. 20 You foolish man, do you want evidence that faith without deeds is useless ? 21Was not our ancestor Abraham considered righteous for what he did when he offered his son Isaac on the altar? 22 You see that his faith and his actions were working together, and his faith was made complete by what he did. 23 And the scripture was fulfilled that says, \"Abraham believed God, and it was credited to him as righteousness,\" and he was called God's friend. 24 You see that a person is justified by what he does and not by faith alone. 25 In the same way, was not even Rahab the prostitute considered righteous for what she did when she gave lodging to the spies and sent them off in a different direction? 26 As the body without the spirit is dead, so faith without deeds is dead.",
@@ -19925,7 +19930,7 @@ module.exports = {
         "Chapter 1": "1 Jude, a servant of Jesus Christ and a brother of James, To those who have been called, who are loved by God the Father and kept by Jesus Christ: 2 Mercy, peace and love be yours in abundance. 3 Dear friends, although I was very eager to write to you about the salvation we share, I felt I had to write and urge you to contend for the faith that was once for all entrusted to the saints. 4 For certain men whose condemnation was written about long ago have secretly slipped in among you. They are godless men, who change the grace of our God into a license for immorality and deny Jesus Christ our only Sovereign and Lord. 5 Though you already know all this, I want to remind you that the Lord delivered his people out of Egypt, but later destroyed those who did not believe. 6 And the angels who did not keep their positions of authority but abandoned their own home--these he has kept in darkness, bound with everlasting chains for judgment on the great Day. 7 In a similar way, Sodom and Gomorrah and the surrounding towns gave themselves up to sexual immorality and perversion. They serve as an example of those who suffer the punishment of eternal fire. 8 In the very same way, these dreamers pollute their own bodies, reject authority and slander celestial beings. 9 But even the archangel Michael, when he was disputing with the devil about the body of Moses, did not dare to bring a slanderous accusation against him, but said, \"The Lord rebuke you!\" 10 Yet these men speak abusively against whatever they do not understand; and what things they do understand by instinct, like unreasoning animals--these are the very things that destroy them. 11 Woe to them! They have taken the way of Cain; they have rushed for profit into Balaam's error; they have been destroyed in Korah's rebellion. 12 These men are blemishes at your love feasts, eating with you without the slightest qualm--shepherds who feed only themselves. They are clouds without rain, blown along by the wind; autumn trees, without fruit and uprooted--twice dead. 13 They are wild waves of the sea, foaming up their shame; wandering stars, for whom blackest darkness has been reserved forever. 14 Enoch, the seventh from Adam, prophesied about these men: \"See, the Lord is coming with thousands upon thousands of his holy ones 15 to judge everyone, and to convict all the ungodly of all the ungodly acts they have done in the ungodly way, and of all the harsh words ungodly sinners have spoken against him.\" 16 These men are grumblers and faultfinders; they follow their own evil desires; they boast about themselves and flatter others for their own advantage. 17 But, dear friends, remember what the apostles of our Lord Jesus Christ foretold. 18 They said to you, \"In the last times there will be scoffers who will follow their own ungodly desires.\" 19 These are the men who divide you, who follow mere natural instincts and do not have the Spirit. 20 But you, dear friends, build yourselves up in your most holy faith and pray in the Holy Spirit. 21 Keep yourselves in God's love as you wait for the mercy of our Lord Jesus Christ to bring you to eternal life. 22 Be merciful to those who doubt; 23 snatch others from the fire and save them; to others show mercy, mixed with fear--hating even the clothing stained by corrupted flesh. 24 To him who is able to keep you from falling and to present you before his glorious presence without fault and with great joy-- 25 to the only God our Savior be glory, majesty, power and authority, through Jesus Christ our Lord, before all ages, now and forevermore! Amen."
     }
 };
-},{}],8:[function(require,module,exports) {
+},{}],7:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20033,7 +20038,7 @@ var PathSelector = function (_Component) {
 }(_react.Component);
 
 exports.default = PathSelector;
-},{"react":4,"../books.json":36}],30:[function(require,module,exports) {
+},{"react":5,"../books.json":14}],31:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -20063,7 +20068,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],17:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -20094,25 +20099,25 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":30}],9:[function(require,module,exports) {
+},{"./bundle-url":31}],8:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":17}],10:[function(require,module,exports) {
+},{"_css_loader":18}],9:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":17}],11:[function(require,module,exports) {
+},{"_css_loader":18}],10:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":17}],12:[function(require,module,exports) {
+},{"_css_loader":18}],11:[function(require,module,exports) {
 module.exports="/pathware/BackgroundImage.dc404206.png";
 },{}],3:[function(require,module,exports) {
 'use strict';
@@ -20233,7 +20238,7 @@ var Main = function (_Component) {
 }(_react.Component);
 
 exports.default = Main;
-},{"react":4,"./ChapterViewer.jsx":7,"./BookSelector.jsx":8,"../css/site.css":9,"../css/gravitons.css":10,"../css/animate.css":11,"../images/BackgroundImage.png":12}],2:[function(require,module,exports) {
+},{"react":5,"./ChapterViewer.jsx":6,"./BookSelector.jsx":7,"../css/site.css":8,"../css/gravitons.css":9,"../css/animate.css":10,"../images/BackgroundImage.png":11}],2:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -20249,7 +20254,7 @@ var _Main2 = _interopRequireDefault(_Main);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _reactDom.render)(_react2.default.createElement(_Main2.default, null), document.getElementById('root'));
-},{"react":4,"react-dom":5,"./components/Main.jsx":3}],39:[function(require,module,exports) {
+},{"react":5,"react-dom":4,"./components/Main.jsx":3}],37:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -20278,7 +20283,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54176' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58566' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -20419,5 +20424,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[39,2], null)
+},{}]},{},[37,2], null)
 //# sourceMappingURL=/pathware/entry.d0f44e16.map
